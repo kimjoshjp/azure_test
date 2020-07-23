@@ -10,10 +10,10 @@ provider "azurerm" {
   version = "~>2.0"
   features {}
   
-  ARM_SUBSCRIPTION_ID = var.ARM_SUBSCRIPTION_ID
-  ARM_CLIENT_ID = var.ARM_CLIENT_ID
-  ARM_CLIENT_SECRET = var.ARM_CLIENT_SECRET
-  ARM_TENANT_ID = var.ARM_TENANT_ID
+  subscription_id = var.ARM_SUBSCRIPTION_ID
+  client_id = var.ARM_CLIENT_ID
+  client_secret = var.ARM_CLIENT_SECRET
+  tenant_id = var.ARM_TENANT_ID
   
 }
 resource "azurerm_resource_group" "rg" {
